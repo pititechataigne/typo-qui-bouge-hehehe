@@ -1,4 +1,4 @@
 # variable_font_exercice1
 
 url de mon site :
-https://pititechataigne.github.io/battle_font_exercice1/
+file:///C:/Users/Etudiant/Downloads/battle_font_exercice1-main(1)/battle_font_exercice1-main/index.html
