@@ -1,0 +1,177 @@
+
+
+.movement{
+  font-family: 'MovementV';
+}
+  
+
+.mixal{
+  font-family: 'mixal';
+  font-variation-settings:"wght" 200;
+
+}
+  
+h2{
+font-size: 200px;
+color: brown;
+font-variation-settings: "SPAC" 118, "wght" 200;
+transform: rotate(10deg);
+}
+  
+#premier {
+position: relative;
+color: black;
+transform: rotate(10deg);
+position: relative;
+left:  222px;
+top: 218px;
+
+z-index: -1;
+ animation-name: mixal; /*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+ animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+ animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+ animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+ animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+ animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+ /*--------------------------------------------------------------------------------------------*/
+ 
+}
+  
+#deuxième {
+opacity: 0,5;
+mix-blend-mode:multiply;
+position: relative;
+left: 357px;
+top: 202px;
+
+
+animation-name: movement; /*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+ animation-duration: 3s; /*durée totale d'une itération de l'animation en seconde*/
+ animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+ animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+ animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+ animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+ /*--------------------------------------------------------------------------------------------*/
+
+}
+
+
+
+
+  #troisième {
+    opacity: 0,5;
+    mix-blend-mode:multiply;
+    position: relative;
+    left: 114px;
+    top: -295px;
+   font-variation-settings: "wght" 200;
+    animation-name: mixal_troisième;/*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+   animation-duration: 3s; /*durée totale d'une itération de l'animation en seconde*/
+   animation-iteration-count:infinite; /*nombre d'itération de l'animation*/
+   animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+   animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+   animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+   /*--------------------------------------------------------------------------------------------*/
+  
+  }
+
+
+
+  
+  
+  #troisième:hover {
+    color: yellow;
+    font-variation-settings: "wght" 900;
+    rotate:180deg;
+    transition-duration: 1s;
+    animation-name: mixal_troisième;
+    animation-duration: 0,5s;
+    animation-iteration-count: infinite;
+    }
+
+
+
+    @keyframes mixal { /*ici vous renseignez le nom de l'animation à réutiliser 
+      pour la propriété animation-name*/
+      
+    0%{ /*ici on renseigne la valeur de départ*/
+      color : black;
+      font-variation-settings:"wght" 100; 
+      
+    }
+    
+    50%{ /*ici on renseigne la valeur de départ*/
+      color : rgb(20, 7, 7);
+      font-variation-settings:"wght" 110;
+    
+    }
+    
+    70%{ /*ici on renseigne la valeur de départ*/
+      color : rgb(66, 13, 13);
+      font-variation-settings:"wght" 200; 
+    }
+    
+    100%{/*ici on renseigne la valeur de fin*/
+    color: red; 
+    font-variation-settings:"wght"500;
+    }
+    }
+
+
+
+
+
+@keyframes mixal_troisième { /*ici vous renseignez le nom de l'animation à réutiliser 
+  pour la propriété animation-name*/
+  
+0%{ /*ici on renseigne la valeur de départ*/
+  color : rgb(245, 12, 148);
+  font-variation-settings:"wght" 100; 
+  
+}
+
+50%{ /*ici on renseigne la valeur de départ*/
+  color : rgb(117, 29, 78);
+  font-variation-settings:"wght" 300;
+
+}
+
+100%{/*ici on renseigne la valeur de fin*/
+color: rgb(44, 21, 32); 
+font-variation-settings:"wght"500;
+}
+}
+
+
+
+
+
+@keyframes movement { /*ici vous renseignez le nom de l'animation à réutiliser 
+  pour la propriété animation-name*/
+  
+0%{ /*ici on renseigne la valeur de départ*/
+  color : rgb(255, 0, 0);
+  font-variation-settings:"SPAC" 100, "wght"100;
+  rotate: 20deg; 
+}
+
+50%{ /*ici on renseigne la valeur de départ*/
+  color : rgb(128, 1, 1);
+  font-variation-settings: "SPAC" 105, "wght" 300;
+  rotate: 160deg;
+}
+
+70%{ /*ici on renseigne la valeur de départ*/
+  color : rgb(153, 0, 0);
+  font-variation-settings:"SPAC" 110,"wght" 500; 
+  rotate: 220deg;
+}
+
+100%{/*ici on renseigne la valeur de fin*/
+color: rgb(44, 6, 6); 
+font-variation-settings:"SPAC" 120, "wght"700;
+rotate: 310deg;
+}
+}
+
+
